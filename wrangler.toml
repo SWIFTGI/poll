@@ -1,0 +1,13 @@
+name = "poll"
+main = "server/dist/index.js"
+compatibility_date = "2024-12-01"
+
+# Environment variables for Honeycomb integration
+[vars]
+HONEYCOMB_DATASET = "ballot-app"
+NODE_ENV = "production"
+
+# KV Namespace for ballot persistence
+[[kv_namespaces]]
+binding = "BALLOTS_KV"
+id = "f73461427b4d474db847e7cd4f5615a5"
